@@ -1,0 +1,87 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+        <title>Portal Covidão</title>
+            <script language=javascript type="text/javascript">
+                dayName = new Array ("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado")
+                monName = new Array ("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro")
+                now = new Date
+            </script> 
+    </head>
+    <body id="body">
+        <table border="0" width="100%" align="center" id="tabela">
+            <tr>
+                <td width="200">
+                    <img src="https://www.unisuam.edu.br/wp-content/uploads/2014/07/logo_unisuam.png" width="200" height="70">
+                </td>
+                <td width="300" align="center">
+                    <script language=javascript type="text/javascript">
+                        document.write ("<br>",now.getDate() + " de " + monName [now.getMonth()]   +  " de " + now.getFullYear() + ' //')
+                    </script>
+                <SPAN ID="Clock">00:00:00</SPAN>
+                    <SCRIPT LANGUAGE="JavaScript">
+                        var Elem = document.getElementById("Clock");
+                        function Horario(){ 
+                        var Hoje = new Date(); 
+                        var Horas = Hoje.getHours(); 
+                        if(Horas < 10){ 
+                        Horas = "0"+Horas; 
+                        } 
+                        var Minutos = Hoje.getMinutes(); 
+                        if(Minutos < 10){ 
+                        Minutos = "0"+Minutos; 
+                        } 
+                        var Segundos = Hoje.getSeconds(); 
+                        if(Segundos < 10){ 
+                        Segundos = "0"+Segundos; 
+                        } 
+                        Elem.innerHTML = Horas+":"+Minutos+":"+Segundos; 
+                        } 
+                        window.setInterval("Horario()",1000);
+                    </SCRIPT>
+                </td>
+                <td width="200" align="center">
+                    <a href="vacinas.html" class="classname">Vacinas </a> 
+                    <a href="mapainfo.html" class="classname">Continente-Info</a>
+                </td>
+            </tr>
+        </table>
+        <table border="0" width="75%" align="center" id="corpocentral">
+            <tr>
+                <td colspan="3" align="center">
+                    <img src="arquivos/Imagem index corona.jpg">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" align="left">
+                    <p align="left">
+                        <h3>Importancia da Vacinação</h3>
+                        <p>Há séculos, cientistas realizam pesquisas de imunização por meio de vacinação. Várias vacinasbem sucedidas foram fabricadas no século XX, como as utilizadas para combater tétano, difteria, coqueluche e rubéola, além do grande sucesso da vacina contra pólio, na década de 1950. Nos últimos anos, o desenvolvimento científico trouxe ao mundo novas vacinas e a Humanidade pode hoje combater inúmeras doenças através da aplicação de doses. No Brasil, depois do sucesso da campanha de vacinação contra varíola na década de 1970, tendo o último caso registrado no País em 1971, foi formulado o Programa Nacional de Imunizações em 1973, por determinação do Ministério da Saúde. Com o passar dos anos e fortalecimento da ideia, hoje o PNI ocupa espaço fundamental nas Secretarias Municipais de Saúde.
+                        </p>
+                        <p>
+                        As campanhas de imunização vêm passando, ao longo dos anos, por um processo de aperfeiçoamento, especialmente com o advento dos dias nacionais de vacinação contra a poliomielite, realizados a partir de 1980. Há uma preocupação com o resultado do esforço em convocar pais e responsáveis por crianças menores de cinco anos. Várias estratégias são utilizadas. Foi criada uma marca que simbolizava, inicialmente, o compromisso com a erradicação da poliomielite e, posteriormente, com todas as vacinas previstas para o primeiro ano de vida. Foi o marco da comunicação que buscava dar unidade a esse processo sem perder as características mais localizadas. O Zé Gotinha é, até hoje, símbolo de vacina. Para além da polêmica sobre se campanha educa ou deseduca, fica o saldo positivo de uma experiência e a certeza de que é preciso buscar os motivos, continuar pesquisando, identificando metodologias e técnicas de maior aproximação com a população para que ela perceba a oferta de serviços e ações de saúde como direito de cidadania.
+                        O maior desafio da vacinação é a consciência da população com relação à importância desse serviço, não só crianças precisam atualizar o cartão de vacinação, como também os adultos.
+                        </p>
+                        <h3>Vacinação em massa e aspectos culturais</h3>
+                        <p>
+                        No Brasil, campanhas empreendidas desde o final do século XX pelo Estado brasileiro, aponta para a existência de uma “cultura de imunização” estando esta associada a um processo de introdução de vacinas e de campanhas de vacinação em massa
+                        Atualmente não se observa uma coerção explícita do Estado no que se refere à vacinação, porém é necessário considerar que, os valores culturais não são respeitados frente a essa prática da vacinação em massa, justificando algumas condutas contrárias da população em relação à vacinação.
+                        Assim, é necessário levar em consideração opiniões e reflexões de grupos que são contrários às vacinações, bem como a exposição de seus argumentos e suas propostas. Essa recusa, muitas vezes está relacionada a indivíduos, grupos, família ou responsáveis, pertencentes a grupos influenciados por questões filosóficas, religiosas, medo de eventos adversos ou por orientação médica. Todos esses motivos listados para a não vacinação tem uma característica em comum, a falta de base científica, o desconhecimento histórico e o alarmismo de suas manifestações, e a consequência desses movimentos, muitas das doenças que poderiam ter sido erradicadas ou pelo menos controladas ainda dão origem a surtos e até mesmo epidemias.
+                        <p>
+                        Eles foram causados principalmente pela insuficiente cobertura da vacina, ainda que o agente imunizante estivesse amplamente disponível, a atuação dos grupos antivacina foi lamentavelmente decisiva para esses surtos. Para que todos se conscientizem sobre as doenças e o porque da vacinação em massa é necessário conscientizar           permanentemente a população sobre as vantagens da vacinação.
+                        </p>
+                </td>
+            </tr>
+        </table>
+        <table border="0" width="100%" align="center" id="tabela">
+            <tr>
+                <td colspan="3" align="center">
+                    <a href="quem-somos.html" class="classname">Quem Somos</a>
+                    <a href="quem-somos.html" class="classname">Nossa sede</a>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapa-Mundo</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body id="body">
+    <table border="0" width="100%" align="center"  id="tabela">
+        <tr>
+            <td width="200">
+                <img src="https://www.unisuam.edu.br/wp-content/uploads/2014/07/logo_unisuam.png" width="200" height="70">
+            </td>
+            <td align="center" width="300">
+                <h1><strong>Mapa Mundi COVID</strong></h1>
+            </td>
+            <td align="center" width="200">
+                <a href="index.html" class="classname">Menu</a> 
+                <a href="vacinas.html" class="classname">Vacinas</a>
+            </td>
+        </tr>
+    </table>
+    
+    <table border="1" width="75%" align="center" id="corpocentral">
+        <tr>
+            <td align="center">
+                <img src="arquivos\Mapa mundi.png" usemap="#mapamundi"/>
+                <map name="mapamundi">
+                    <area onclick="America()" shape="rect" coords="502,715,299,414" href="#">
+                    <area onclick="America()" shape="rect" coords="52,79,499,414" href="#"/>
+                    <area onclick="Antartida()" shape="rect" coords="52,718,1193,927" href="#"/>
+                    <area onclick="Europa()" shape="rect" coords="560,125,749,328" href="#"/>
+                    <area onclick="Africa()" shape="rect" coords="554,349,766,595" href="#"/>
+                    <area onclick="Asia()" shape="rect" coords="772,40,1197,476" href="#"/>
+                    <area onclick="Oceania()" shape="rect" coords="950,482,1199,659" href="#"/>
+                </map>
+            </td>
+        </tr>
+    </table>
+    
+    <script language=javascript type="text/javascript">
+        function America(){
+            alert(" AMERICA\n Casos: mais de 16.320.813\n Mortes: mais de 650.783\n Recuperados: mais de 11.518.998\n Dados do dia: 04/10/2020") 
+        }
+        function Antartida(){
+            alert("Antartida\nNão houveram casos")
+        }
+        function Europa(){
+            alert(" EUROPA\n Casos: mais de 2.922.757Mortes: mais de 202.437\n Recuperados: mais de 1.567.754\n Dados do dia: 04/10/2020")
+        }
+        function Africa(){
+            alert(" AFRICA\n Casos: mais de 982.837\n Mortes: 24.544\n Recuperados: 899.296\n Dados do dia: 04/10/2020")
+        }
+        function Asia(){
+            alert(" ASIA\n casos :  Mais de 7.188.281\n mortes: mais de 137.796\n Recuperados: mais de 6.056.577\n Dados do dia: 04/10/2020")
+        }
+        function Oceania(){
+            alert(" OCEANIA\n Casos: mais de 28.611\n Mortes: mais de 915\n Recuperados: mais de 26.116\n Dados do dia: 04/10/2020")
+        }
+    </script>
+    
+    <table border="0" width="100%" align="center" id="tabela">
+        <tr>
+            <td colspan="3" align="center">
+                <a href="quem-somos.html" class="classname">Quem Somos</a>
+                <a href="quem-somos.html" class="classname">Nossa sede</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
